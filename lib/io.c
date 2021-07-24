@@ -104,13 +104,22 @@ void IO_SetADCaction( uint8_t channel, const char* mode )
     // set the appropriate fn to be called in ADC dsp loop
 }
 
+int bcount_max = 8;
 static bool view_chans[6] = {[0 ... 5]=false};
 static float last_chans[6];
+
 void IO_public_set_view( int chan, bool state )
 {
     if(chan < 0 || chan >= 6){ return; }
     view_chans[chan] = state;
     if(state){ last_chans[chan] = -6.0; } // reset out of range, to force update
+}
+
+void IO_public_view_framerate( int fps )
+{
+    if(fps <= 2 || fps >= 32){ return; } // some arbitrary bounds checking
+
+    bcount_max = fps; // does not actually represent fps yet, but the delay count between updates
 }
 
 static void public_update( void )
@@ -120,7 +129,7 @@ static void public_update( void )
     static int bcount = 0;
     static int chan = 0; // outputs*4 then inputs*2
     bcount++;
-    if(bcount >= 16){ // time to send a new update
+    if(bcount >= bcount_max){ // time to send a new update
         bcount = 0;
         if(view_chans[chan]){
             if(chan<4){ // outputs

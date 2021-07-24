@@ -24,6 +24,10 @@ P.view.all = function(b)
     for n=1,4 do P.view.output[n](b) end
 end
 
+P.view.framerate = function(fps)
+    pub_view_framerate(fps)
+end
+
 
 -- get the value of a named public parameter
 P.unwrap = function(name) return P._params[ P._names[name] ] end

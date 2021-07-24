@@ -12,3 +12,5 @@ float IO_GetADC( uint8_t channel );
 void IO_SetADCaction( uint8_t channel, const char* mode );
 
 void IO_public_set_view( int chan, bool state );
+
+void IO_public_view_framerate( int fps );

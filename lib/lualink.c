@@ -873,6 +873,14 @@ static int _pub_view_out( lua_State* L )
     return 0;
 }
 
+static int _pub_view_framerate( lua_State* L)
+{
+    int fps = luaL_checkinteger(L, 1)-1; // lua is 1-based
+    IO_public_view_framerate(fps);
+    lua_pop(L, 1);
+    return 0;
+}
+
 
 // array of all the available functions
 static const struct luaL_Reg libCrow[]=
@@ -943,6 +951,7 @@ static const struct luaL_Reg libCrow[]=
         // public
     , { "pub_view_in"       , _pub_view_in      }
     , { "pub_view_out"      , _pub_view_out     }
+    , { "pub_view_framerate"      , _pub_view_framerate     }
 
     , { NULL               , NULL              }
     };
