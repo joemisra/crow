@@ -67,6 +67,7 @@ do return
     }
   , { name = 'loop_active'
     , cmd  = 12
+    , get  = true
     , args = { 'state', s8 }
     , docs = 'Set the state of looping'
     }
