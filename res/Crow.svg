@@ -1,0 +1,21 @@
+<svg width="128.5" height="380" viewBox="0 0 128.5 380" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#222222"/>
+  <!-- Inputs -->
+  <text x="10" y="40" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 1</text>
+  <text x="10" y="80" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 2</text>
+  <text x="10" y="120" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 3</text>
+  <text x="10" y="160" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 4</text>
+  <text x="10" y="200" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 5</text>
+  <text x="10" y="240" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 6</text>
+  <text x="10" y="280" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 7</text>
+  <text x="10" y="320" fill="#FFFFFF" font-size="10" font-family="sans-serif">IN 8</text>
+  <!-- Outputs -->
+  <text x="55" y="40" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 1</text>
+  <text x="55" y="80" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 2</text>
+  <text x="55" y="120" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 3</text>
+  <text x="55" y="160" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 4</text>
+  <text x="55" y="200" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 5</text>
+  <text x="55" y="240" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 6</text>
+  <text x="55" y="280" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 7</text>
+  <text x="55" y="320" fill="#FFFFFF" font-size="10" font-family="sans-serif">OUT 8</text>
+</svg>

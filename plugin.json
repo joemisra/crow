@@ -1,0 +1,23 @@
+{
+  "slug": "VCVCrow",
+  "name": "VCVCrow",
+  "version": "2.0.0",
+  "license": "MIT",
+  "brand": "VCVCrow",
+  "author": "Your Name",
+  "authorEmail": "",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "Crow",
+      "name": "Crow",
+      "description": "A module with 8 CV inputs and 8 CV outputs.",
+      "tags": ["Utility"]
+    }
+  ]
+}
